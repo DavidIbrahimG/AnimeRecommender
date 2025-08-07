@@ -158,7 +158,7 @@ class DataProcessor:
         except Exception as e:
             raise CustomException("Failed to save animje and anime_synopsis data",sys)
     
-    def run(self):
+    def run(self): 
         try:
             self.load_data(usecols=["user_id","anime_id","rating"])
             self.filter_users()
@@ -176,7 +176,7 @@ class DataProcessor:
 
 if __name__=="__main__":
     data_processor = DataProcessor(ANIMELIST_CSV,PROCESSED_DIR)
-    data_processor.run()
+    data_processor.run() # function to run the entire data processing pipeline
 
             
 
