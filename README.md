@@ -73,6 +73,22 @@ The dataset was filtered to **5 million rows** to balance scale and performance.
 
 ---
 
+## Flask UI
+ The User enters their userid and the system picks recommendations based of their past watching history and favorite anime genres.
+ 
+<img width="1161" height="768" alt="Screenshot 2025-08-08 at 16 49 32" src="https://github.com/user-attachments/assets/9dd6033a-0dec-496a-a864-f79c97fe24c0" />
+
+---
+
+## Prediction Ui
+The predictions are availed to the user
+
+<img width="1150" height="869" alt="Screenshot 2025-08-08 at 16 50 03" src="https://github.com/user-attachments/assets/1b2c09f9-dcf9-4b10-8174-3eb3284659d0" />
+
+
+
+---
+
 ## ☁️ Cloud Integration and Data Ingestion
 
 All datasets were stored in a **GCP bucket** and downloaded programmatically:
