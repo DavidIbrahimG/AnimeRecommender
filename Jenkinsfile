@@ -14,13 +14,11 @@ pipeline{
             steps {
                 script {
                     echo 'Cloning the repository from Github'
-                    git branch: 'main',
-                        url: 'https://github.com/DavidIbrahimG/AnimeRecommender.git',
-                        credentialsId: 'git-token'
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-token', url: 'https://github.com/DavidIbrahimG/AnimeRecommender.git']])'
                 }
             }
         }
-        
+
         stage('Installing Python and Pip ....') {
             steps {
                 script {
